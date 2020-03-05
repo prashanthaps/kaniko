@@ -1,4 +1,5 @@
 language: go
+arch: ppc64le
 os: linux
 dist: bionic
 env:
@@ -6,8 +7,7 @@ env:
 go:
   - "1.13.3"
 go_import_path: github.com/GoogleContainerTools/kaniko
-arch:
-  - ppc64le
+
 jobs:
   include:
     - name: unit-test
